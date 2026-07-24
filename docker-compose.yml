@@ -1,0 +1,8 @@
+services:
+  vigia:
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - /home/coolify-admin/vigia:/usr/share/nginx/html:ro
+    expose:
+      - "80"
