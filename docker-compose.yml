@@ -6,3 +6,10 @@ services:
       - /home/coolify-admin/vigia:/usr/share/nginx/html:ro
     expose:
       - "80"
+    networks:
+      - coolify
+
+networks:
+  coolify:
+    external: true
+    name: coolify
